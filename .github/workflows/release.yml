@@ -36,6 +36,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./gradlew :patches:buildAndroid generatePatchesList clean
 
+      # This fork has no upstream tags. Without a baseline tag, semantic-release
+      # treats the whole upstream history as unreleased and the release commit fails.
+      - name: Seed baseline tag
+        run: |
+          if [ -z "$(git tag --list 'v*')" ]; then
+            git tag v1.5.0 a37261b029dc8d9ca54a9c8bf48a36ffa48e55be
+          fi
+
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
