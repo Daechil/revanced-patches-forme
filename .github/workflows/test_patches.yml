@@ -22,7 +22,10 @@ jobs:
         uses: actions/setup-java@v5
         with:
           distribution: 'temurin'
-          java-version: '17'
+          # Morphe CLI needs 21; the last entry (17) stays the default for the build.
+          java-version: |
+            21
+            17
 
       - name: Cache Gradle
         uses: burrunan/gradle-cache-action@v3
@@ -53,6 +56,7 @@ jobs:
           MPP=$(ls patches/build/libs/patches-*.mpp | grep -v -e sources -e javadoc | head -n 1)
           echo "CLI: $CLI"
           echo "Patches: $MPP"
+          java() { "$JAVA_HOME_21_X64/bin/java" "$@"; }
           java -jar "$CLI" --help || true
           java -jar "$CLI" patch --help || true
           mkdir -p out logs
