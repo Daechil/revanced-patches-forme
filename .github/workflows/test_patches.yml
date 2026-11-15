@@ -7,7 +7,8 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  # Needed to see the draft release.
+  contents: write
 
 jobs:
   test:
@@ -38,7 +39,12 @@ jobs:
           mkdir -p cli apks
           gh release download --repo MorpheApp/morphe-cli --pattern '*.jar' --dir cli
           ls -la cli
-          gh release download apk-upload --repo "${{ github.repository }}" --dir apks
+          gh api "repos/${{ github.repository }}/releases" \
+            --jq '.[] | select(.draft and .tag_name == "apk-upload") | .assets[] | "\(.id) \(.name)"' |
+          while read -r ID NAME; do
+            gh api -H 'Accept: application/octet-stream' \
+              "repos/${{ github.repository }}/releases/assets/$ID" > "apks/$NAME"
+          done
           ls -la apks
 
       - name: Apply patches
@@ -47,6 +53,7 @@ jobs:
           MPP=$(ls patches/build/libs/patches-*.mpp | grep -v -e sources -e javadoc | head -n 1)
           echo "CLI: $CLI"
           echo "Patches: $MPP"
+          java -jar "$CLI" --help || true
           java -jar "$CLI" patch --help || true
           mkdir -p out logs
           for APK in apks/*; do
