@@ -38,6 +38,7 @@ jobs:
 
       # This fork has no upstream tags. Without a baseline tag, semantic-release
       # treats the whole upstream history as unreleased and the release commit fails.
+      # The tag stays local: .releaserc deletes it before semantic-release pushes tags.
       - name: Seed baseline tag
         run: |
           if [ -z "$(git tag --list 'v*')" ]; then
