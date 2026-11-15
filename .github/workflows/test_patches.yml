@@ -63,7 +63,7 @@ jobs:
           for APK in apks/*; do
             NAME=$(basename "$APK")
             echo "::group::$NAME"
-            java -jar "$CLI" patch --patches "$MPP" --force --out "out/${NAME%.*}-patched.apk" \
+            java -jar "$CLI" patch --patches "$MPP" --force --continue-on-error --out "out/${NAME%.*}-patched.apk" \
               --temporary-files-path "tmp/$NAME" "$APK" 2>&1 | tee "logs/$NAME.log" || true
             echo "::endgroup::"
             {
