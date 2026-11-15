@@ -15,6 +15,8 @@ val disableAdsPatch = bytecodePatch(
     name = "Disable ads",
     description = "Disables CHZZK advertisements, including live stream pre-roll, mid-roll and " +
         "post-roll ads and clip feed ads.",
+    // Temporarily disabled by default while diagnosing a 3.17.0 launch crash.
+    default = false,
 ) {
     compatibleWith(COMPATIBILITY_CHZZK)
 

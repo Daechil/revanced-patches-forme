@@ -14,6 +14,8 @@ import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 val disableP2PPatch = bytecodePatch(
     name = "Disable P2P",
     description = "Disables CHZZK peer-assisted grid streaming and forces CDN playback.",
+    // Temporarily disabled by default while diagnosing a 3.17.0 launch crash.
+    default = false,
 ) {
     compatibleWith(COMPATIBILITY_CHZZK)
 

@@ -8,6 +8,8 @@ import app.revanced.patches.chzzk.shared.Constants.COMPATIBILITY_CHZZK
 val unlockCheatKeyPatch = bytecodePatch(
     name = "Unlock cheat key",
     description = "Unlocks CHZZK cheat key subscription benefits without an active subscription.",
+    // Temporarily disabled by default while diagnosing a 3.17.0 launch crash.
+    default = false,
 ) {
     compatibleWith(COMPATIBILITY_CHZZK)
 
