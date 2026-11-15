@@ -1,5 +1,5 @@
 {
-  "version": "1.7.0",
+  "version": "1.7.1",
   "patches": [
     {
       "name": "Add Packet Handler",
@@ -2596,7 +2596,7 @@
     {
       "name": "Hide home banners",
       "description": "Hides promotional banners on the CHZZK home recommend tab, including the top banner carousel and the in-feed event and image banners.",
-      "default": true,
+      "default": false,
       "dependencies": [],
       "compatiblePackages": [
         {

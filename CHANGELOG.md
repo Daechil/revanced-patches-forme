@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/Daechil/revanced-patches-forme/compare/v1.7.0...v1.7.1) (2026-11-15)
+
+
+### Bug Fixes
+
+* **chzzk:** disable Hide home banners by default while diagnosing 3.17.0 crash ([c1600d2](https://github.com/Daechil/revanced-patches-forme/commit/c1600d281fceba1a3a207fe5c44c10fa4a42106c))
+
 # [1.7.0](https://github.com/Daechil/revanced-patches-forme/compare/v1.6.0...v1.7.0) (2026-11-15)
 
 

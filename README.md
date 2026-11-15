@@ -4,7 +4,7 @@
 ## 🩹 Patches list
 
 <!-- PATCHES_START -->
-> **[v1.7.0](https://github.com/Daechil/revanced-patches-forme/releases/tag/v1.7.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;121 patches total
+> **[v1.7.1](https://github.com/Daechil/revanced-patches-forme/releases/tag/v1.7.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;121 patches total
 <details>
 <summary>📦 Kakao Talk&nbsp;&nbsp;•&nbsp;&nbsp;76 patches</summary>
 <br>
