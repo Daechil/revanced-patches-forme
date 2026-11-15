@@ -105,7 +105,7 @@ internal fun addDefaultDcInsideSettingsPreferences() {
             summaryKey = "morphe_settings_link_github_summary",
             intent = ActionIntentPreference.Intent(
                 action = ACTION_VIEW,
-                data = "https://github.com/AmpleReVanced/revanced-patches",
+                data = "https://github.com/Daechil/revanced-patches-forme",
             ),
         ),
         ActionIntentPreference(

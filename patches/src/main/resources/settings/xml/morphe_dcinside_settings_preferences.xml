@@ -113,7 +113,7 @@
             android:title="@string/morphe_settings_link_github">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="https://github.com/AmpleReVanced/revanced-patches" />
+                android:data="https://github.com/Daechil/revanced-patches-forme" />
         </Preference>
         <Preference
             android:key="morphe_pref_telegram"

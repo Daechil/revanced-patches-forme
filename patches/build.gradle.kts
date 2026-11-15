@@ -4,7 +4,7 @@ patches {
     about {
         name = "Ample Patches"
         description = "Patches for Morphe"
-        source = "git@github.com:AmpleReVanced/revanced-patches"
+        source = "git@github.com:Daechil/revanced-patches-forme"
         author = "Ample"
         contact = "na"
         website = "na"
@@ -59,7 +59,7 @@ publishing {
     repositories {
         maven {
             name = "githubPackages"
-            url = uri("https://maven.pkg.github.com/amplerevanced/revanced-patches")
+            url = uri("https://maven.pkg.github.com/daechil/revanced-patches-forme")
             credentials(PasswordCredentials::class)
         }
     }
