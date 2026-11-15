@@ -1,5 +1,5 @@
 {
-  "version": "1.7.1",
+  "version": "1.7.2",
   "patches": [
     {
       "name": "Add Packet Handler",
@@ -593,7 +593,7 @@
     {
       "name": "Auto claim TongPow",
       "description": "Automatically claims CHZZK TongPow rewards when they become available while watching streams.",
-      "default": true,
+      "default": false,
       "dependencies": [],
       "compatiblePackages": [
         {
@@ -1626,7 +1626,7 @@
     {
       "name": "Disable P2P",
       "description": "Disables CHZZK peer-assisted grid streaming and forces CDN playback.",
-      "default": true,
+      "default": false,
       "dependencies": [],
       "compatiblePackages": [
         {
@@ -1982,7 +1982,7 @@
     {
       "name": "Disable ads",
       "description": "Disables CHZZK advertisements, including live stream pre-roll, mid-roll and post-roll ads and clip feed ads.",
-      "default": true,
+      "default": false,
       "dependencies": [],
       "compatiblePackages": [
         {
@@ -4303,7 +4303,7 @@
     {
       "name": "Unlock cheat key",
       "description": "Unlocks CHZZK cheat key subscription benefits without an active subscription.",
-      "default": true,
+      "default": false,
       "dependencies": [],
       "compatiblePackages": [
         {

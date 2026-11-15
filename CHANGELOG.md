@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/Daechil/revanced-patches-forme/compare/v1.7.1...v1.7.2) (2026-11-15)
+
+
+### Bug Fixes
+
+* **chzzk:** disable all Chzzk patches by default to isolate the 3.17.0 crash ([80c8af3](https://github.com/Daechil/revanced-patches-forme/commit/80c8af32af68fdd3b034bdfa4f75f5c59181060c))
+
 ## [1.7.1](https://github.com/Daechil/revanced-patches-forme/compare/v1.7.0...v1.7.1) (2026-11-15)
 
 

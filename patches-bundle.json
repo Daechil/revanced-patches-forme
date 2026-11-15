@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-15T11:06:03",
-  "description": "## [1.7.1](https://github.com/Daechil/revanced-patches-forme/compare/v1.7.0...v1.7.1) (2026-11-15)\n\n\n### Bug Fixes\n\n* **chzzk:** disable Hide home banners by default while diagnosing 3.17.0 crash ([c1600d2](https://github.com/Daechil/revanced-patches-forme/commit/c1600d281fceba1a3a207fe5c44c10fa4a42106c))",
-  "download_url": "https://github.com/Daechil/revanced-patches-forme/releases/download/v1.7.1/patches-1.7.1.mpp",
+  "created_at": "2026-11-15T11:48:14",
+  "description": "## [1.7.2](https://github.com/Daechil/revanced-patches-forme/compare/v1.7.1...v1.7.2) (2026-11-15)\n\n\n### Bug Fixes\n\n* **chzzk:** disable all Chzzk patches by default to isolate the 3.17.0 crash ([80c8af3](https://github.com/Daechil/revanced-patches-forme/commit/80c8af32af68fdd3b034bdfa4f75f5c59181060c))",
+  "download_url": "https://github.com/Daechil/revanced-patches-forme/releases/download/v1.7.2/patches-1.7.2.mpp",
   "signature_download_url": "",
-  "version": "1.7.1"
+  "version": "1.7.2"
 }
