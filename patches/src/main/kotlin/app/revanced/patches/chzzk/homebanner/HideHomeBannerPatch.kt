@@ -17,6 +17,8 @@ val hideHomeBannerPatch = bytecodePatch(
     name = "Hide home banners",
     description = "Hides promotional banners on the CHZZK home recommend tab, including the top " +
         "banner carousel and the in-feed event and image banners.",
+    // Temporarily disabled by default while diagnosing a 3.17.0 launch crash.
+    default = false,
 ) {
     compatibleWith(COMPATIBILITY_CHZZK)
 
