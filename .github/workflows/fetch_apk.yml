@@ -1,0 +1,46 @@
+name: Fetch APK
+
+# Downloads app files from a Google Drive share link and attaches them to the
+# draft release "apk-upload", so they can be used for patch development
+# without uploading large files from a phone. Delete the draft when done.
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: Google Drive share link (file or folder, shared with anyone who has the link)
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    name: Fetch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download from Google Drive
+        env:
+          URL: ${{ inputs.url }}
+        run: |
+          pip install --quiet gdown
+          mkdir -p dl
+          cd dl
+          if [[ "$URL" == *"/folders/"* ]]; then
+            gdown --folder "$URL"
+          else
+            gdown --fuzzy "$URL"
+          fi
+          find . -type f -exec ls -la {} +
+
+      - name: Attach to draft release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          TAG=apk-upload
+          if ! gh release view "$TAG" >/dev/null 2>&1; then
+            gh release create "$TAG" --draft --title "APK upload (temporary)" \
+              --notes "Temporary app files for patch development. Delete when done."
+          fi
+          find dl -type f -print0 | xargs -0 gh release upload "$TAG" --clobber
