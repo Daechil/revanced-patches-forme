@@ -1,3 +1,17 @@
+# [1.7.0](https://github.com/Daechil/revanced-patches-forme/compare/v1.6.0...v1.7.0) (2026-11-15)
+
+
+### Bug Fixes
+
+* **chzzk:** match the home banner rows in 3.17.0 ([1020f3d](https://github.com/Daechil/revanced-patches-forme/commit/1020f3d91c31b66a038152a8b4f4ceade6f2f227))
+* **kakaotalk:** match the version info string of any app version ([7910b10](https://github.com/Daechil/revanced-patches-forme/commit/7910b10d0a1616546b9f93a07aba47f16a7d7b62))
+
+
+### Features
+
+* **chzzk:** support version `3.17.0` ([8673184](https://github.com/Daechil/revanced-patches-forme/commit/8673184e87472eb4dae1c507f163a02d4f3085d9))
+* **kakaotalk:** support version `26.9.2` ([9b30125](https://github.com/Daechil/revanced-patches-forme/commit/9b30125f6a3600681a8f099181dc47c64f605526))
+
 # [1.6.0](https://github.com/Daechil/revanced-patches-forme/compare/v1.5.0...v1.6.0) (2026-11-15)
 
 
