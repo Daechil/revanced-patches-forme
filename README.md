@@ -258,9 +258,9 @@ patches to Morphe (update the links below after creating your new patches repo):
 
 #### How to use these patches
 
-Click here to add these patches to Morphe: https://morphe.software/add-source?github=AmpleReVanced/revanced-patches
+Click here to add these patches to Morphe: https://morphe.software/add-source?github=Daechil/revanced-patches-forme
 
-Or manually add this repository url as a patch source in Morphe: https://github.com/AmpleReVanced/revanced-patches
+Or manually add this repository url as a patch source in Morphe: https://github.com/Daechil/revanced-patches-forme
 
 ### 🛠️ Building
 
