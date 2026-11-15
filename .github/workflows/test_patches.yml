@@ -1,0 +1,71 @@
+name: Test patches
+
+# Builds the patches and applies them with Morphe CLI to every app file in the
+# draft release "apk-upload", to check which patches still match new app versions.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Cache Gradle
+        uses: burrunan/gradle-cache-action@v3
+
+      - name: Build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./gradlew :patches:buildAndroid --no-daemon
+
+      - name: Download Morphe CLI and app files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p cli apks
+          gh release download --repo MorpheApp/morphe-cli --pattern '*.jar' --dir cli
+          ls -la cli
+          gh release download apk-upload --repo "${{ github.repository }}" --dir apks
+          ls -la apks
+
+      - name: Apply patches
+        run: |
+          CLI=$(ls -S cli/*.jar | head -n 1)
+          MPP=$(ls patches/build/libs/patches-*.mpp | grep -v -e sources -e javadoc | head -n 1)
+          echo "CLI: $CLI"
+          echo "Patches: $MPP"
+          java -jar "$CLI" patch --help || true
+          mkdir -p out logs
+          for APK in apks/*; do
+            NAME=$(basename "$APK")
+            echo "::group::$NAME"
+            java -jar "$CLI" patch --patches "$MPP" --force --out "out/${NAME%.*}-patched.apk" \
+              --temporary-files-path "tmp/$NAME" "$APK" 2>&1 | tee "logs/$NAME.log" || true
+            echo "::endgroup::"
+            {
+              echo "### $NAME"
+              echo '```'
+              grep -E -i "SEVERE|failed|succeeded|error|Exception" "logs/$NAME.log" | head -n 200
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          done
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: patch-logs
+          path: logs/
