@@ -4,7 +4,7 @@
 ## 🩹 Patches list
 
 <!-- PATCHES_START -->
-> **[v1.5.0](https://github.com/AmpleReVanced/revanced-patches/releases/tag/v1.5.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;128 patches total
+> **[v1.5.0](https://github.com/AmpleReVanced/revanced-patches/releases/tag/v1.5.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;121 patches total
 <details>
 <summary>📦 Kakao Talk&nbsp;&nbsp;•&nbsp;&nbsp;76 patches</summary>
 <br>
@@ -155,40 +155,6 @@
 </details>
 
 <details>
-<summary>📦 Flexcil&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
-<br>
-
-**🎯 Supported versions:**
-
-| 1.5.0.16 | 1.5.0.11 | 1.5.0.10 | 1.5.0.9 | 1.5.0.8 | 1.5.0.7 | 1.4.4.14 | 1.4.4.12 | 1.4.4.10 | 1.4.4.9 |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-
-| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
-|----------|----------------|-----------|
-| [Bypass login](#bypass-login) | Skips the mandatory account sign-in on launch and opens the app directly. |  |
-| [Unlock Premium features](#unlock-premium-features) | Enables app features locked behind the subscription paywall. |  |
-
-</details>
-
-<details>
-<summary>📦 StarNote&nbsp;&nbsp;•&nbsp;&nbsp;4 patches</summary>
-<br>
-
-**🎯 Supported versions:**
-
-| 🧪&nbsp;1.5.4 | 🧪&nbsp;1.5.3 |
-| :---: | :---: |
-
-| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
-|----------|----------------|-----------|
-| [Bypass login](#bypass-login) | Skips the mandatory account sign-in on launch and opens the app directly. |  |
-| [Enable local handwriting search](#enable-local-handwriting-search) | Uses the on-device ML engine to index and search handwriting. |  |
-| [Unlock Premium features](#unlock-premium-features) | Enables local premium features and raises the local note creation quota. |  |
-| [Use local ML for Smart HWR](#use-local-ml-for-smart-hwr) | Uses the on-device ML engine instead of SuNia for Smart HWR. |  |
-
-</details>
-
-<details>
 <summary>📦 SOOP&nbsp;&nbsp;•&nbsp;&nbsp;11 patches</summary>
 <br>
 
@@ -225,21 +191,6 @@
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
 | [Enable navigation live updates](#enable-navigation-live-updates) | Converts Now Bar navigation notifications to Android Live Updates on Android 16 or newer. |  |
-
-</details>
-
-<details>
-<summary>📦 Samsung Keyboard&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
-<br>
-
-**🎯 Supported versions:**
-
-| 5.9.40.48 |
-| :---: |
-
-| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
-|----------|----------------|-----------|
-| [Enable non-One UI ROM support](#enable-non-one-ui-rom-support) | Makes Samsung Keyboard installable and usable on non-One UI ROMs. |  |
 
 </details>
 
