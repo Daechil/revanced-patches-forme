@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/Daechil/revanced-patches-forme/compare/v1.5.0...v1.6.0) (2026-11-15)
+
+
+### Features
+
+* drop StarNote, Samsung Keyboard and Flexcil support ([db80a10](https://github.com/Daechil/revanced-patches-forme/commit/db80a10473704798f22083e3fd15298d10684c9f))
+
 # [1.5.0](https://github.com/AmpleReVanced/revanced-patches/compare/v1.4.0...v1.5.0) (2026-10-23)
 
 
