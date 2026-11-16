@@ -1,3 +1,10 @@
+## [1.7.3](https://github.com/Daechil/revanced-patches-forme/compare/v1.7.2...v1.7.3) (2026-11-16)
+
+
+### Bug Fixes
+
+* **chzzk:** drop 3.17.0 support; the re-signed build is rejected at launch ([c2e109d](https://github.com/Daechil/revanced-patches-forme/commit/c2e109d20047554a6ed0a9e23baf4a263f9fafa0))
+
 ## [1.7.2](https://github.com/Daechil/revanced-patches-forme/compare/v1.7.1...v1.7.2) (2026-11-15)
 
 

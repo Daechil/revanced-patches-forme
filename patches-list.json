@@ -1,5 +1,5 @@
 {
-  "version": "1.7.2",
+  "version": "1.7.3",
   "patches": [
     {
       "name": "Add Packet Handler",
@@ -593,7 +593,7 @@
     {
       "name": "Auto claim TongPow",
       "description": "Automatically claims CHZZK TongPow rewards when they become available while watching streams.",
-      "default": false,
+      "default": true,
       "dependencies": [],
       "compatiblePackages": [
         {
@@ -604,12 +604,6 @@
           "appIconColor": "#00FFA3",
           "signatures": null,
           "targets": [
-            {
-              "version": "3.17.0",
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            },
             {
               "version": "3.15.2",
               "isExperimental": false,
@@ -1626,7 +1620,7 @@
     {
       "name": "Disable P2P",
       "description": "Disables CHZZK peer-assisted grid streaming and forces CDN playback.",
-      "default": false,
+      "default": true,
       "dependencies": [],
       "compatiblePackages": [
         {
@@ -1637,12 +1631,6 @@
           "appIconColor": "#00FFA3",
           "signatures": null,
           "targets": [
-            {
-              "version": "3.17.0",
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            },
             {
               "version": "3.15.2",
               "isExperimental": false,
@@ -1982,7 +1970,7 @@
     {
       "name": "Disable ads",
       "description": "Disables CHZZK advertisements, including live stream pre-roll, mid-roll and post-roll ads and clip feed ads.",
-      "default": false,
+      "default": true,
       "dependencies": [],
       "compatiblePackages": [
         {
@@ -1993,12 +1981,6 @@
           "appIconColor": "#00FFA3",
           "signatures": null,
           "targets": [
-            {
-              "version": "3.17.0",
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            },
             {
               "version": "3.15.2",
               "isExperimental": false,
@@ -2596,7 +2578,7 @@
     {
       "name": "Hide home banners",
       "description": "Hides promotional banners on the CHZZK home recommend tab, including the top banner carousel and the in-feed event and image banners.",
-      "default": false,
+      "default": true,
       "dependencies": [],
       "compatiblePackages": [
         {
@@ -2607,12 +2589,6 @@
           "appIconColor": "#00FFA3",
           "signatures": null,
           "targets": [
-            {
-              "version": "3.17.0",
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            },
             {
               "version": "3.15.2",
               "isExperimental": false,
@@ -4303,7 +4279,7 @@
     {
       "name": "Unlock cheat key",
       "description": "Unlocks CHZZK cheat key subscription benefits without an active subscription.",
-      "default": false,
+      "default": true,
       "dependencies": [],
       "compatiblePackages": [
         {
@@ -4314,12 +4290,6 @@
           "appIconColor": "#00FFA3",
           "signatures": null,
           "targets": [
-            {
-              "version": "3.17.0",
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            },
             {
               "version": "3.15.2",
               "isExperimental": false,

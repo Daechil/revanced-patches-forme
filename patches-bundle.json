@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-15T11:48:14",
-  "description": "## [1.7.2](https://github.com/Daechil/revanced-patches-forme/compare/v1.7.1...v1.7.2) (2026-11-15)\n\n\n### Bug Fixes\n\n* **chzzk:** disable all Chzzk patches by default to isolate the 3.17.0 crash ([80c8af3](https://github.com/Daechil/revanced-patches-forme/commit/80c8af32af68fdd3b034bdfa4f75f5c59181060c))",
-  "download_url": "https://github.com/Daechil/revanced-patches-forme/releases/download/v1.7.2/patches-1.7.2.mpp",
+  "created_at": "2026-11-16T08:53:35",
+  "description": "## [1.7.3](https://github.com/Daechil/revanced-patches-forme/compare/v1.7.2...v1.7.3) (2026-11-16)\n\n\n### Bug Fixes\n\n* **chzzk:** drop 3.17.0 support; the re-signed build is rejected at launch ([c2e109d](https://github.com/Daechil/revanced-patches-forme/commit/c2e109d20047554a6ed0a9e23baf4a263f9fafa0))",
+  "download_url": "https://github.com/Daechil/revanced-patches-forme/releases/download/v1.7.3/patches-1.7.3.mpp",
   "signature_download_url": "",
-  "version": "1.7.2"
+  "version": "1.7.3"
 }
