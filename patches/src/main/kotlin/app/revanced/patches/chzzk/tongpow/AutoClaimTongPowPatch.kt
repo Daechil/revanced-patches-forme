@@ -12,8 +12,6 @@ import com.android.tools.smali.dexlib2.AccessFlags
 val autoClaimTongPowPatch = bytecodePatch(
     name = "Auto claim TongPow",
     description = "Automatically claims CHZZK TongPow rewards when they become available while watching streams.",
-    // Temporarily disabled by default while diagnosing a 3.17.0 launch crash.
-    default = false,
 ) {
     compatibleWith(COMPATIBILITY_CHZZK)
 
